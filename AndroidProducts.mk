@@ -15,9 +15,17 @@
 #
 
 PRODUCT_MAKEFILES := \
+<<<<<<< Updated upstream
    $(LOCAL_DIR)/lineage_dandelion.mk
 
 COMMON_LUNCH_CHOICES := \
     lineage_dandelion-user \
     lineage_dandelion-userdebug \
     lineage_dandelion-eng
+=======
+   $(LOCAL_DIR)/qassa_dandelion.mk
+
+COMMON_LUNCH_CHOICES := \
+    qassa_dandelion-userdebug \
+    qassa_dandelion-eng
+>>>>>>> Stashed changes
