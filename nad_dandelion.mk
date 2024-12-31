@@ -29,14 +29,17 @@ $(call inherit-product, device/xiaomi/dandelion/device.mk)
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_INCLUDE_STOCK_ARCORE := false
-# Inherit some common qassa stuff
-$(call inherit-product, vendor/qassa/config/common_full_phone.mk)
+# Inherit some common nad stuff
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+
+# NusantaraProject Stuff
+NAD_BUILD_TYPE := UNOFFICIAL
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := qassa_dandelion
+PRODUCT_NAME := nad_dandelion
 PRODUCT_DEVICE := dandelion
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := Redmi G25 Series
+PRODUCT_MODEL := Redmi G25s
 PRODUCT_MANUFACTURER := xiaomi
 
 # Build info
