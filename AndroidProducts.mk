@@ -15,8 +15,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/qassa_dandelion.mk
+   $(LOCAL_DIR)/nad_dandelion.mk
 
 COMMON_LUNCH_CHOICES := \
-    qassa_dandelion-userdebug \
-    qassa_dandelion-eng
+    nad_dandelion-userdebug \
+    nad_dandelion-eng
