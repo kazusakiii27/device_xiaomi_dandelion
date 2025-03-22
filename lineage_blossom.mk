@@ -27,14 +27,14 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Redmi
-PRODUCT_DEVICE := dandelion
+PRODUCT_DEVICE := blossom
 PRODUCT_MANUFACTURER := xiaomi
-PRODUCT_NAME := lineage_dandelion
+PRODUCT_NAME := lineage_blossom
 
 # Build info
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_VENDOR := xiaomi
-TARGET_VENDOR_PRODUCT_NAME := dandelion
+TARGET_VENDOR_PRODUCT_NAME := blossom
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="dandelion-user 10 QP1A.190711.020 V12.0.11.0.QCDMIXM release-keys"
 
