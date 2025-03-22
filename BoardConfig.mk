@@ -14,21 +14,26 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/dandelion
+DEVICE_PATH := device/xiaomi/blossom64
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := dandelion
+TARGET_OTA_ASSERT_DEVICE := dandelion,angelica,angelican,cattail,angelicain,blossom
 
 # Architecture
-TARGET_ARCH := arm
+TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
-TARGET_CPU_ABI := armeabi-v7a
-TARGET_CPU_ABI2 := armeabi
-TARGET_CPU_VARIANT := generic
-TARGET_CPU_VARIANT_RUNTIME := cortex-a53
+TARGET_CPU_ABI := arm64-v8a
+TARGET_CPU_ABI2 :=
+TARGET_CPU_VARIANT := cortex-a53
 
-# Binder
-TARGET_USES_64_BIT_BINDER := true
+TARGET_2ND_ARCH := arm
+TARGET_2ND_ARCH_VARIANT := armv8-a
+TARGET_2ND_CPU_ABI := armeabi-v7a
+TARGET_2ND_CPU_ABI2 := armeabi
+TARGET_2ND_CPU_VARIANT := cortex-a53
+
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_HEADER_ARCH := arm64
 
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
@@ -38,7 +43,7 @@ USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := dandelion
+TARGET_BOOTLOADER_BOARD_NAME := blossom
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
@@ -47,14 +52,14 @@ BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 
 # DPI
-TARGET_SCREEN_DENSITY := 320
+TARGET_SCREEN_DENSITY := 385
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6765
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_dandelion
-TARGET_RECOVERY_DEVICE_MODULES := libinit_dandelion
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_xiaomi_blossom
+TARGET_RECOVERY_DEVICE_MODULES := libinit_xiaomi_blossom
 
 # Kernel
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
